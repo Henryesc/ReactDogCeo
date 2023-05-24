@@ -6,8 +6,12 @@ const Breeds = () => {
 
   const data = useSelector(selectBreeds);
 
+  const handleClick = e => {
+    console.log(e.target.dataset.breed);
+  }
+
   const breeds = data && data.map (breed => {
-    return <li>{breed}</li>;
+    return <li data-breed={breed} key={breed} onClick={handleClick}>{breed}</li>;
     })
 
   return (
