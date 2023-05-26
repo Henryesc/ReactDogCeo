@@ -73,10 +73,11 @@ ul {
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
+  margin: 20px 0;
 }
 
 .breeds li {
-  background-color: aliceblue;
+  background-color: rgb(255, 240, 184);
   cursor: pointer;
   text-align: center;
   padding: 20px 0px;
@@ -84,6 +85,6 @@ ul {
 }
 
 .breeds li.active { 
-  background-color: cornflowerblue;
+  background-color: rgba(234, 175, 37, 0.909);
   color: white;
 }

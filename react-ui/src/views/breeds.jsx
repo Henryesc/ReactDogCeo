@@ -7,12 +7,6 @@ const Breeds = () => {
 
   const data = useSelector(selectBreeds);
 
-  const applyActiveClass = (breed) => {
-    if (selectedBreeds.indexOf(breed) > -1) {
-      return 'active';
-    }
-  }
-
   const handleClick = e => {
     const value = e.target.dataset.breed;
     if (selectedBreeds.indexOf(value) > -1) {
