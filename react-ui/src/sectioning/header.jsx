@@ -4,7 +4,7 @@ import data from '../mocks/navs.json';
 
 const Header = () => {
 
-  const navs = data.map((nav,index) => <NavLink key={nav} to={nav.href} key={`${nav.name}-${index}`}> {nav.name} </NavLink>);
+  const navs = data.map((nav,index) => <NavLink to={nav.href} key={`${nav.name}-${index}`}> {nav.name} </NavLink>);
 
   return (
     <header>

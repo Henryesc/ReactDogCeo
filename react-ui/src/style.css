@@ -66,3 +66,24 @@ footer {
   width: 34px;
   padding-right: 5px;
 }
+
+ul {
+  row-gap: 4px;
+  column-gap: 4px;
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+
+.breeds li {
+  background-color: aliceblue;
+  cursor: pointer;
+  text-align: center;
+  padding: 20px 0px;
+  width: 160px;
+}
+
+.breeds li.active { 
+  background-color: cornflowerblue;
+  color: white;
+}
